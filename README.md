@@ -1,6 +1,6 @@
 # Structura
 
-Implementing Data Structures and Algorithms in Zig as practice and refresher both for Computer Science fundamental knowledge and building my knowledge of the Zig programming language.
+Implementing Data Structures and Algorithms in Zig.
 
 ## Resources
 
