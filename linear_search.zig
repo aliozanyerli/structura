@@ -2,25 +2,6 @@ const std = @import("std");
 const testing = std.testing;
 const expect = testing.expect;
 
-// Linear Search
-pub fn linear_search(haystack: []u8, needle: u8) bool {
-    for (haystack) |value| {
-        if (value == needle) return true;
-    }
-
-    return false;
-}
-
-test "Linear Search" {
-    var numbers = [_]u8{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-    for (0..10) |i| {
-        try expect(linear_search(&numbers, @as(u8, @truncate(i))));
-    }
-
-    try expect(linear_search(&numbers, 10) == false);
-}
-
 // Generic Linear Search
 pub fn g_linear_search(
     comptime T: type,
