@@ -27,10 +27,6 @@ test "Two Crystal Balls" {
     var truthy = [_]bool{true} ** 532;
     var bools = falsy ++ truthy;
 
-    const break_point = falsy.len + 1;
-
-    try expect(two_crystal_balls(&bools) == break_point - 1);
+    try expect(two_crystal_balls(&bools) == falsy.len);
     try expect(two_crystal_balls(&bools) != -1);
-
-
 }
